@@ -1,0 +1,259 @@
+*{ 
+    padding: 0; 
+    margin: 0; 
+    border: 0; 
+    text-decoration: none; 
+} 
+    
+:focus,:active{outline: none;} 
+a:focus,a:active{outline: none;} 
+    
+nav,footer,header,aside{display: block;} 
+    
+:root{ 
+    --boss: rgb(160, 160, 160); 
+    --colors: rgb(210, 198, 198); 
+}  
+    
+input,button,textarea{font-family:inherit;} 
+    
+input::-ms-clear{display: none;} 
+button{cursor: pointer;} 
+button::-moz-focus-inner {padding:0;border:0;} 
+a, a:visited{text-decoration: none;} 
+a:hover{text-decoration: none;} 
+ul li{list-style: none;} 
+img{vertical-align: top;} 
+    
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;} 
+    
+html{ 
+    scroll-behavior: smooth; 
+}
+.header {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo:hover {
+    animation: shuh linear 4s 1;
+    transition: 4s;
+}
+@keyframes shuh {
+    50%{
+        padding-left: 1080px;
+    }
+    100% {
+        padding-left: 0px;
+    }
+}
+.header__navigation {
+}
+
+body{
+    background-color: #ffb663d8;
+    transition: 1s;
+}
+
+.poloska{
+    background-color: #000;
+    width: 30px;
+    height: 3px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.main {
+
+}
+.main__container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+.slider {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    transition: 1s;
+}
+.slider__slide {
+    width: 100%;
+    flex: 0 0 100%;
+    transition: 1s;
+}
+
+.slider__slide-box {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+}
+.slider-box__cat1 {
+    width: 300px;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    filter: drop-shadow(-10px 10px 10px #0000007e);
+}
+.slider-box__cat2 {
+    width: 300px;
+    position: absolute;
+    left: 25%;
+    top: 37px;
+}
+.slider-box__cat3 {
+    width: 300px;
+    position: absolute;
+    right: 9%;
+    bottom: -30px;
+}
+.zagolovok {
+    font-size: 180px;
+    position: absolute;
+    top: 50px;
+    z-index: 3;
+}
+.gray__cat-1 {
+    position: absolute;
+    top: 30px;
+    right: 300px;
+    height: 200px;
+    filter: drop-shadow(-10px -10px 6px #00000052);
+}
+.shadow__cat{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.shadow{
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    box-shadow: 0 200px 15px #61616189;
+    top: 300px;
+    left: 0;
+    border-radius: 100%;
+}
+.gray__cat-2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 6;
+}
+.gray {
+    word-spacing: 70px;
+    right: 0;
+    
+}
+.stripe {
+    font-size: 240px;
+    background-image: url(./Знімок\ екрана\ 2024-03-23\ 141429.png);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 10px 5px 10px #00000034;
+}
+.striped-cat-1 {
+    width: 350px;
+    position: absolute;
+    top: 50px;
+    left: 330px;
+    z-index: 5;
+    filter: drop-shadow(-10px 0 10px #00000080);
+}
+.striped-cat-2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+}
+.striped-cat-3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 500px;
+}
+.slider-menu {
+}
+.slider-menu__nav {
+    display: flex;
+    margin: 20px auto;
+    max-width: 1200px;
+    justify-content: space-around;
+    align-items: center;
+}
+.slider-menu__nav-link {
+    cursor: pointer;
+    font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.siam__cat-1 {
+    height: 500px;
+    position: absolute;
+    left: 0;
+    z-index: 7;
+    filter: drop-shadow(-10px 10px 10px #0000005f);
+}
+.siam__cat-2{
+    width: 300px;
+    position: absolute;
+    top: 50px;
+    right: 270px;
+    z-index: 7;
+    filter: drop-shadow(0 10px 10px #0000005f);
+}
+.siam__cat-3 {
+    position: absolute;
+    bottom: 0;
+    width: 500px;
+    right: 0;
+}
+.siam__shadow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.shadow-si {
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    box-shadow: 0 200px 15px #0000002b;
+    top: 320px;
+    right: 0;
+    border-radius: 100%;
+}
+.siam {
+    right: 0;
+    word-spacing: 100px;
+}
+.paralax {
+    transition: 0.2s;
+}
+.paralax-1 {
+    transition: 0.3s;
+}
+/* .footer {
+
+}
+.footer__zagolovok {
+}
+.hide {
+    position: relative;
+    /* left: -2000px; */
+    /* opacity: 0; */
+/*     display: none;
+    transition: 1s;
+}
+.hide.block {
+    /* left: 0; */
+    /* opacity: 1; */
+/*     display: block;
+} */
